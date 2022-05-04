@@ -8,7 +8,11 @@ const Filters = (props) => {
           movieFilter={props.movieFilter}
           handleChangeMovie={props.handleChangeMovie}
         />
-        <FilterYear />
+        <FilterYear
+          years={props.years}
+          yearFilter={props.yearFilter}
+          handleChangeYear={props.handleChangeYear}
+        />
       </form>
     </section>
   );

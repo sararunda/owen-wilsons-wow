@@ -1,9 +1,19 @@
-const FilterYear = () => {
+const FilterYear = (props) => {
+  const handleChangeSelect = (event) => {
+    const filterYearValue = event.currentTarget.value;
+    props.handleChangeYear(filterYearValue);
+  };
   return (
     <>
       <label>Year</label>
-      <select name="" id="">
-        <option value="">all</option>
+      <select
+        name=""
+        id=""
+        onChange={handleChangeSelect}
+        value={props.yearFilter}
+      >
+        <option value="all">all</option>
+        <option value="uno">uno</option>
       </select>
     </>
   );

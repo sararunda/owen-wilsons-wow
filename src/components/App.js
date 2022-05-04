@@ -21,13 +21,30 @@ function App() {
   const handleChangeMovie = (filterMovieValue) => {
     setMovieFilter(filterMovieValue);
   };
+  const handleChangeYear = (filterYearValue) => {
+    setYearFilter(filterYearValue);
+  };
+
+  //new array tu get years
+
+  const getYears = () => {
+    const years = movies.map((year) => year.year);
+
+    const uniqueYears = years.filter((year, index) => {
+      return years.indexOf(year) === index;
+    });
+    return uniqueYears;
+  };
 
   return (
     <div>
       <h1>Owen Wilson`s "wow"</h1>
       <Filters
         movieFilter={movieFilter}
+        yearFilter={yearFilter}
         handleChangeMovie={handleChangeMovie}
+        handleChangeYear={handleChangeYear}
+        years={getYears()}
       />
       <MovieList movieFilter={movieFilter} movies={movies} />
     </div>
