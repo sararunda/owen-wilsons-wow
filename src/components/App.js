@@ -1,5 +1,6 @@
 import '../styles/App.scss';
-import getApiData from '../service/fetch';
+import GetApiData from '../service/fetch';
+import MovieList from './MovieList';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -7,15 +8,16 @@ function App() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    getApiData().then((dataClean) => {
-      console.log(dataClean);
-      setMovies(dataClean);
+    GetApiData().then((dataApi) => {
+      console.log(dataApi);
+      setMovies(dataApi);
     });
   }, []);
 
   return (
     <div>
       <h1>hola mundo</h1>
+      <MovieList movies={movies} />
     </div>
   );
 }

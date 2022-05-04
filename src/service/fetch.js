@@ -1,6 +1,6 @@
 //https://owen-wilson-wow-api.herokuapp.com/
 
-const getApiData = () => {
+const GetApiData = () => {
   return fetch(
     'https://owen-wilson-wow-api.herokuapp.com/wows/random?results=50'
   )
@@ -21,4 +21,4 @@ const getApiData = () => {
       return dataClean;
     });
 };
-export default getApiData;
+export default GetApiData;
