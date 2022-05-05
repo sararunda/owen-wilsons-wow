@@ -33,6 +33,7 @@ function App() {
     const uniqueYears = years.filter((year, index) => {
       return years.indexOf(year) === index;
     });
+    console.log(uniqueYears);
     return uniqueYears;
   };
 
@@ -46,7 +47,11 @@ function App() {
         handleChangeYear={handleChangeYear}
         years={getYears()}
       />
-      <MovieList movieFilter={movieFilter} movies={movies} />
+      <MovieList
+        movieFilter={movieFilter}
+        yearFilter={yearFilter}
+        movies={movies}
+      />
     </div>
   );
 }
