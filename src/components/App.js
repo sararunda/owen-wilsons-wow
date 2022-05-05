@@ -2,7 +2,9 @@ import '../styles/App.scss';
 import GetApiData from '../service/fetch';
 import MovieList from './MovieList';
 import Filters from '../components/Filters';
+import MovieDetail from './MovieDetail';
 import { useEffect, useState } from 'react';
+import { Routes, Route, useLocation, matchPath } from 'react-router-dom';
 
 function App() {
   //states variables
@@ -33,25 +35,49 @@ function App() {
     const uniqueYears = years.filter((year, index) => {
       return years.indexOf(year) === index;
     });
-    console.log(uniqueYears);
+
     return uniqueYears;
   };
+
+  //movie detail
+  const { pathname } = useLocation();
+  const dataPath = matchPath('/movie/:id', pathname);
+  console.log(dataPath);
+  const movieId = dataPath !== null ? dataPath.params.id : null;
+  const movieDetail = movies.find((movie) => movie.id === parseInt(movieId));
+  console.log(movieDetail);
 
   return (
     <div>
       <h1>Owen Wilson`s "wow"</h1>
-      <Filters
-        movieFilter={movieFilter}
-        yearFilter={yearFilter}
-        handleChangeMovie={handleChangeMovie}
-        handleChangeYear={handleChangeYear}
-        years={getYears()}
-      />
-      <MovieList
-        movieFilter={movieFilter}
-        yearFilter={yearFilter}
-        movies={movies}
-      />
+
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Filters
+                movieFilter={movieFilter}
+                yearFilter={yearFilter}
+                handleChangeMovie={handleChangeMovie}
+                handleChangeYear={handleChangeYear}
+                years={getYears()}
+              />{' '}
+              <MovieList
+                movieFilter={movieFilter}
+                yearFilter={yearFilter}
+                movies={movies}
+              />
+            </>
+          }
+        />
+        <Route
+          path="/movie/:id"
+          element={
+            <MovieDetail movie={movieDetail === undefined ? {} : movieDetail} />
+          }
+        />
+      </Routes>
     </div>
   );
 }

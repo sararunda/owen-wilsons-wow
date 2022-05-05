@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const MovieItem = (props) => {
   return (
     <>
@@ -9,6 +10,7 @@ const MovieItem = (props) => {
       <h2>{props.movies.name}</h2>
       <p>{props.movies.fullLine}</p>
       <p>{props.movies.year}</p>
+      <Link to={`/movie/${props.movies.id}`}>+ info</Link>
     </>
   );
 };

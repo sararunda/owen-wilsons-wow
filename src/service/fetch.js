@@ -12,7 +12,7 @@ const GetApiData = () => {
           poster: movie.poster,
           name: movie.movie,
           year: movie.year,
-          director: movie.firector,
+          director: movie.director,
           fullLine: movie.full_line,
           audio: movie.audio,
         };
