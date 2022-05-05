@@ -1,4 +1,11 @@
+import { useEffect } from 'react';
+import localStorage from '../service/localStorage';
+
 const MovieDetail = (props) => {
+  useEffect(() => {
+    localStorage.set(props.movie.id, props.movie);
+  }, []);
+
   return (
     <article>
       <h2>{props.movie.name}</h2>

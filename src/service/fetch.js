@@ -1,5 +1,9 @@
 //https://owen-wilson-wow-api.herokuapp.com/
 
+const getMovieId = (movie) => {
+  return movie.movie + movie.current_wow_in_movie;
+};
+
 const GetApiData = () => {
   return fetch(
     'https://owen-wilson-wow-api.herokuapp.com/wows/random?results=50'
@@ -8,7 +12,7 @@ const GetApiData = () => {
     .then((data) => {
       const dataClean = data.map((movie, index) => {
         return {
-          id: index,
+          id: getMovieId(movie),
           poster: movie.poster,
           name: movie.movie,
           year: movie.year,

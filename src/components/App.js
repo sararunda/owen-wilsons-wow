@@ -3,6 +3,7 @@ import GetApiData from '../service/fetch';
 import MovieList from './MovieList';
 import Filters from '../components/Filters';
 import MovieDetail from './MovieDetail';
+import localStorage from '../service/localStorage';
 import { useEffect, useState } from 'react';
 import { Routes, Route, useLocation, matchPath } from 'react-router-dom';
 
@@ -44,7 +45,11 @@ function App() {
   const dataPath = matchPath('/movie/:id', pathname);
 
   const movieId = dataPath !== null ? dataPath.params.id : null;
-  const movieDetail = movies.find((movie) => movie.id === parseInt(movieId));
+  const movieInLocalStorage = localStorage.get(movieId, null);
+  const movieDetail =
+    movieInLocalStorage !== null
+      ? movieInLocalStorage
+      : movies.find((movie) => movie.id === movieId);
 
   return (
     <div>
