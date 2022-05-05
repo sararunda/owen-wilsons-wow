@@ -27,7 +27,7 @@ function App() {
     setYearFilter(filterYearValue);
   };
 
-  //new array tu get years
+  //new array to get years
 
   const getYears = () => {
     const years = movies.map((year) => year.year);
@@ -42,10 +42,9 @@ function App() {
   //movie detail
   const { pathname } = useLocation();
   const dataPath = matchPath('/movie/:id', pathname);
-  console.log(dataPath);
+
   const movieId = dataPath !== null ? dataPath.params.id : null;
   const movieDetail = movies.find((movie) => movie.id === parseInt(movieId));
-  console.log(movieDetail);
 
   return (
     <div>

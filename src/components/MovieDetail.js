@@ -6,7 +6,7 @@ const MovieDetail = (props) => {
       <p>{props.movie.fullLine}</p>
       <h3>Director: {props.movie.director}</h3>
       <p>
-        <a href={props.movie.audio} target="_blank">
+        <a href={props.movie.audio} rel="noreferrer" target="_blank">
           escuchar audio
         </a>
       </p>

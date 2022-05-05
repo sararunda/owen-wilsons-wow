@@ -1,9 +1,12 @@
 import FilterMovie from './FilterMovie';
 import FilterYear from './FilterYear';
 const Filters = (props) => {
+  const handlSubmitForm = (event) => {
+    event.preventDefault();
+  };
   return (
     <section>
-      <form action="">
+      <form action="" onSubmit={handlSubmitForm}>
         <FilterMovie
           movieFilter={props.movieFilter}
           handleChangeMovie={props.handleChangeMovie}

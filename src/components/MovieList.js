@@ -14,12 +14,16 @@ const MovieList = (props) => {
       .map((movie, index) => {
         return (
           <li key={index}>
-            <MovieItem movies={movie} />
+            <MovieItem movie={movie} />
           </li>
         );
       });
   };
 
-  return <ul>{renderList()}</ul>;
+  return renderList().length > 0 ? (
+    <ul>{renderList()}</ul>
+  ) : (
+    <p>Not found {props.movieFilter}</p>
+  );
 };
 export default MovieList;
