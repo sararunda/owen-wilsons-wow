@@ -3,6 +3,11 @@ const FilterYear = (props) => {
     const filterYearValue = event.currentTarget.value;
     props.handleChangeYear(filterYearValue);
   };
+  const renderYears = () => {
+    return props.years.map((year) => {
+      return <option value={year}>{year}</option>;
+    });
+  };
   return (
     <>
       <label>Year</label>
@@ -13,7 +18,7 @@ const FilterYear = (props) => {
         value={props.yearFilter}
       >
         <option value="all">all</option>
-        <option value="uno">uno</option>
+        {renderYears()}
       </select>
     </>
   );
