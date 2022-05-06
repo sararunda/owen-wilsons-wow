@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import localStorage from '../service/localStorage';
+import { Link } from 'react-router-dom';
 
 const MovieDetail = (props) => {
   useEffect(() => {
@@ -14,9 +15,10 @@ const MovieDetail = (props) => {
       <h3>Director: {props.movie.director}</h3>
       <p>
         <a href={props.movie.audio} rel="noreferrer" target="_blank">
-          escuchar audio
+          Audio wow
         </a>
       </p>
+      <Link to="/">Back</Link>
     </article>
   );
 };

@@ -15,8 +15,12 @@ function App() {
 
   useEffect(() => {
     GetApiData().then((dataApi) => {
+      function SortArray(x, y) {
+        return x.name.localeCompare(y.name);
+      }
+      let dataApiAlpha = dataApi.sort(SortArray);
       console.log(dataApi);
-      setMovies(dataApi);
+      setMovies(dataApiAlpha);
     });
   }, []);
 
@@ -40,7 +44,7 @@ function App() {
     return uniqueYears;
   };
 
-  //movie detail
+  //movie details
   const { pathname } = useLocation();
   const dataPath = matchPath('/movie/:id', pathname);
 
