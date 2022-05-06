@@ -56,8 +56,9 @@ function App() {
       : movies.find((movie) => movie.id === movieId);
 
   return (
-    <div>
-      <h1>Owen Wilson`s "wow"</h1>
+    <div className="container-app">
+      <h1 className="title">Owen Wilson`s "wow"</h1>
+      <img className="owen" src="../images/owen.jpg" alt="" />
 
       <Routes>
         <Route

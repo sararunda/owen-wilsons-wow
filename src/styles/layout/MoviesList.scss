@@ -1,0 +1,39 @@
+.container-app{
+    background-color: #3e1229;
+    
+    font-family: fantasy;
+}
+
+
+.title{
+    
+    text-align: center;
+    color: #c7a290;
+    padding: 20px;
+    font-family:fantasy;
+    font-weight: 500;
+}
+.owen{
+    width: 250px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    display: block;
+    border:2px solid rgb(199, 162, 144) 
+    
+}
+
+.container-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 50px;
+    border-radius: 30%;
+    
+}
+
+
+.poster{
+    width: 150px;
+}

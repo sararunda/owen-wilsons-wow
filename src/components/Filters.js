@@ -6,7 +6,7 @@ const Filters = (props) => {
   };
   return (
     <section>
-      <form action="" onSubmit={handlSubmitForm}>
+      <form className="form" action="" onSubmit={handlSubmitForm}>
         <FilterMovie
           movieFilter={props.movieFilter}
           handleChangeMovie={props.handleChangeMovie}

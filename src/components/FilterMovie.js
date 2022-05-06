@@ -6,14 +6,15 @@ const FilterMovie = (props) => {
   };
 
   return (
-    <>
-      <label>Movie</label>
+    <div>
+      <label className="label">Movie</label>
       <input
+        className="filter"
         value={props.movieFilter}
         onChange={handleChangeFilter}
         type="text"
       ></input>
-    </>
+    </div>
   );
 };
 export default FilterMovie;

@@ -13,9 +13,10 @@ const FilterYear = (props) => {
     });
   };
   return (
-    <>
-      <label>Year</label>
+    <div>
+      <label className="label">Year</label>
       <select
+        className="filter"
         name=""
         id=""
         onChange={handleChangeSelect}
@@ -24,7 +25,7 @@ const FilterYear = (props) => {
         <option value="">all</option>
         {renderYears()}
       </select>
-    </>
+    </div>
   );
 };
 export default FilterYear;
