@@ -58,7 +58,7 @@ function App() {
   return (
     <div className="container-app">
       <h1 className="title">Owen Wilson`s "wow"</h1>
-      <img className="owen" src="../images/owen.jpg" alt="" />
+      <img className="owen" src="images/owen.jpg" alt="" />
 
       <Routes>
         <Route
