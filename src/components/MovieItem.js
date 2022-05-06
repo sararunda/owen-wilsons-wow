@@ -3,10 +3,12 @@ const MovieItem = (props) => {
   return (
     <div className="container-item">
       <img className="poster" alt={props.movie.name} src={props.movie.poster} />
-      <h2>{props.movie.name}</h2>
-      <p>{props.movie.fullLine}</p>
-      <p>{props.movie.year}</p>
-      <Link to={`/movie/${props.movie.id}`}>+ info</Link>
+      <h2 className="text">{props.movie.name}</h2>
+      <p className="text">{props.movie.fullLine}</p>
+      <p className="text">{props.movie.year}</p>
+      <Link className="link-info" to={`/movie/${props.movie.id}`}>
+        + info
+      </Link>
     </div>
   );
 };

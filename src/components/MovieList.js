@@ -21,7 +21,7 @@ const MovieList = (props) => {
   };
 
   return renderList().length > 0 ? (
-    <ul>{renderList()}</ul>
+    <ul className="list">{renderList()}</ul>
   ) : (
     <p>Not found {props.movieFilter}</p>
   );

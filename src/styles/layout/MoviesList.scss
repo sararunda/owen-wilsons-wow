@@ -14,7 +14,7 @@
     font-weight: 500;
 }
 .owen{
-    width: 250px;
+    width: 280px;
     display: block;
     margin: auto;
     border-radius: 50%;
@@ -24,16 +24,43 @@
 }
 
 .container-item{
+   
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    text-align: center;
+    background-color: #b3b2d2;
     margin: 50px;
     border-radius: 30%;
+    padding: 20px 0;
+    color: #3e1229;
+    border: 5px solid white;
+    
+    
+    
     
 }
+.list{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
 
+}
 
+.text{
+    font-weight: 200;
+}
+.link-info{
+    text-decoration: none;
+    color: #3e1229;
+}
+.link-info:hover{
+    color: #ea7465;
+}
 .poster{
     width: 150px;
+    border-radius: 5px;
+    border: 2px white solid;
 }
