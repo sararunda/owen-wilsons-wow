@@ -1,6 +1,6 @@
 ## Project title:
-# Owen Wilson`s "Wow" :film_strip:
------![Captura](https://user-images.githubusercontent.com/64798006/167263178-bd14bd63-92e1-40c5-9720-5e5897365bbb.PNG)----
+                                                            # Owen Wilson`s "Wow" :film_strip:
+                        ![Captura](https://user-images.githubusercontent.com/64798006/167263178-bd14bd63-92e1-40c5-9720-5e5897365bbb.PNG)
 
 ## Project description🚀:
 _In this project I have created a website where you can search Owen Wilson's films by title or by year and click on each one to find more information such as, for example, the audio of the film where you can hear "wow"._
