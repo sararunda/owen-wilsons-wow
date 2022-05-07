@@ -9,6 +9,7 @@ const FilterMovie = (props) => {
     <div>
       <label className="label">Movie</label>
       <input
+        placeholder="e.g. Hall Pass"
         className="filter"
         value={props.movieFilter}
         onChange={handleChangeFilter}

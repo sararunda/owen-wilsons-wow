@@ -57,8 +57,12 @@ function App() {
 
   return (
     <div className="container-app">
-      <h1 className="title">Owen Wilson`s "wow"</h1>
-      <img className="owen" src="images/owen.jpg" alt="" />
+      <div className="container-title">
+        <h1 className="title">Owen Wilson`s "wow"</h1>
+      </div>
+      <div className="container-image">
+        <img className="owen" src="images/owen.jpg" alt="" />
+      </div>
 
       <Routes>
         <Route

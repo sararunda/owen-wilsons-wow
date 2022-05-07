@@ -1,0 +1,77 @@
+.container-detail{
+    
+    text-align: center;
+    padding: 50px;
+    background-color: #d1c0cc;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    border-radius: 10%;
+    padding: 20px 0;
+    color: #3e1229;
+    border: 5px solid #3e1229;
+    width: 300px;
+    ;
+    
+    
+
+}
+
+.audio{
+    
+    color: #3e1229;
+    padding-bottom: 20px;
+    
+    
+}
+.detail-text{
+    padding: 10px;
+}
+.detail-wow{
+    font-style: oblique;
+
+}
+.back{
+    text-decoration: none;
+    border: 1px solid black;
+    color: #3e1229;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+.back:hover{
+    color: white;
+    background-color: #3e1229;
+}
+
+@media all and (min-width: 700px){
+    .detail-content{
+        width: 600px;
+        display: flex;
+        padding: 20px;
+        justify-content: space-around
+       
+        
+
+    }
+    .container-detail{
+        width: 600px;
+        border-radius: 5%;
+    }
+    .poster{
+        width: 200px;
+    }
+    .detail-text{
+        padding-bottom: 20px;
+        font-size: 40px;
+    }
+    .detail-wow{
+        padding-bottom: 20px;
+    }
+    .detail-director{
+        padding-bottom: 20px;
+    }
+   
+
+}

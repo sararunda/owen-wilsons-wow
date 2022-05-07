@@ -6,7 +6,7 @@
     
 }
 .filter{
-    border: none;
+    border: 1px solid black;
     padding: 5px;
     border-radius: 10px;
     margin-top: 20px;
@@ -17,12 +17,14 @@
 
 .label{
     font-family: fantasy;
-    color: #c7a290;
+    color: #3e1229;
     padding-right: 5px;
 }
 @media all and (min-width: 700px){
     .filter{
         height: 45px;
+        font-size: large;
+        
         
     }
     .label{

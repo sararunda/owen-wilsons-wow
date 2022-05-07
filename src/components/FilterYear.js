@@ -6,7 +6,7 @@ const FilterYear = (props) => {
   const renderYears = () => {
     return props.years.map((year, index) => {
       return (
-        <option key={index} value={year}>
+        <option className="option" key={index} value={year}>
           {year}
         </option>
       );
@@ -22,7 +22,9 @@ const FilterYear = (props) => {
         onChange={handleChangeSelect}
         value={props.yearFilter}
       >
-        <option value="">all</option>
+        <option className="option" value="">
+          all
+        </option>
         {renderYears()}
       </select>
     </div>
