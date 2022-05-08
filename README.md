@@ -24,7 +24,7 @@ Publication of the result on the Internet using GitHub Pages.
 * Main: with the search filter and film listing.
 
 ### Components:
-![esquenaEv-Final](https://user-images.githubusercontent.com/64798006/167294293-54f4ee5e-99a8-4be6-a6d5-b1b77c35af2f.png)
+![components](https://user-images.githubusercontent.com/64798006/167294323-cb6ea1dc-a452-4b2b-80fb-70edc198a495.PNG)
 
 ### Built with 🛠️:
 
