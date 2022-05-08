@@ -10,7 +10,7 @@ Language: English.
 
 Using HTML, Sass, Javascript, React.
 
-Use of mediaqueries for the adaptation of the application to the different devices.
+Use of mediaqueries for the adaptation of the application to the different devices, mobile, tablet and desktop.
 
 Use of routes for web browsing
 
