@@ -23,6 +23,9 @@ Publication of the result on the Internet using GitHub Pages.
 * A header: with the title of the page.
 * Main: with the search filter and film listing.
 
+### Components:
+![esquenaEv-Final](https://user-images.githubusercontent.com/64798006/167294293-54f4ee5e-99a8-4be6-a6d5-b1b77c35af2f.png)
+
 ### Built with 🛠️:
 
 #### Languages:
