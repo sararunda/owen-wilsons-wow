@@ -10,7 +10,9 @@ Language: English.
 
 Using HTML, Sass, Javascript, React.
 
-Use of mediaqueries for the adaptation of the application to the different devices. 
+Use of mediaqueries for the adaptation of the application to the different devices.
+
+Use of routes for web browsing
 
 Using git for project version control. 
 
@@ -28,7 +30,7 @@ Publication of the result on the Internet using GitHub Pages.
 * SCSS
 * Javascript
 * React
-* Routes
+
 #### Tools:
 * VSC
 * GITHUB
