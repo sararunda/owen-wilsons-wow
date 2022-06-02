@@ -47,3 +47,16 @@ Publication of the result on the Internet using GitHub Pages.
 
 Sara Fernández
 
+## Getting Started Guide
+
+NOTE: You need to have Node JS installed to work with this Starter Kit.
+
+Steps to follow :
+
+- Clone this repository
+- Open a terminal in the repository root folder.
+- Install the local dependencies by running the following command in the terminal:
+**npm install**
+- Start the project with the command:
+**npm start**
+
