@@ -53,7 +53,7 @@ NOTE: You need to have Node JS installed to work with this Starter Kit.
 
 Steps to follow :
 
-- Clone this repository
+- **Clone** this repository
 - Open a terminal in the repository root folder.
 - Install the local dependencies by running the following command in the terminal:
 **npm install**
